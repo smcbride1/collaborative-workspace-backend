@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :workspaces
   resources :comments
   resources :cards
   resources :lists
