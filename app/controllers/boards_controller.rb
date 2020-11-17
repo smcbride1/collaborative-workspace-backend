@@ -22,7 +22,7 @@ class BoardsController < ApplicationController
 
     def destroy
         board = Board.find(params[:id])
-        render json: board
+        board.destroy
     end
 
     def board_params

@@ -22,7 +22,7 @@ class ListsController < ApplicationController
 
     def destroy
         list = List.find(params[:id])
-        render json: list
+        list.destroy
     end
 
     def lists_params

@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
 
     def destroy
         comment = Comment.find(params[:id])
-        render json: comment
+        comment.destroy
     end
 
     def comments_params

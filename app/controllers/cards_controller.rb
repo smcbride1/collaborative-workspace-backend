@@ -22,7 +22,7 @@ class CardsController < ApplicationController
 
     def destroy
         card = Card.find(params[:id])
-        render json: card
+        card.destroy
     end
 
     def cards_params
