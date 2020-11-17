@@ -11,7 +11,7 @@ class BoardsController < ApplicationController
 
     def show
         board = Board.find(params[:id])
-        render json: boards
+        render json: board
     end
 
     def update
